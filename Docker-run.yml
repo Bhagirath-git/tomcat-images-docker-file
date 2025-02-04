@@ -1,0 +1,12 @@
+docker build -t imagename .
+
+docker run -d --name containername -p 8080:8080 imagename
+
+docker ps
+docker images
+docker ps -a
+
+docker rm stop/start containername
+docker start $(docker ps -aq)
+docker stop $(docker ps -a)
+ 
